@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111014">
+  <meta name="description" content="A cinematic character archive.">
+  <title>NOCTURNE — Character Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="route-transition" id="routeTransition" aria-hidden="true"><span>NOCTURNE</span></div>
+  <main id="app">
+    <section class="welcome-screen" id="welcome" aria-label="Welcome">
+      <div class="welcome-side welcome-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> A PERSONAL CHARACTER ARCHIVE</div>
+        <div class="welcome-title-wrap">
+          <p class="welcome-kicker">A little world of stories</p>
+          <h1>Welcome<br><em>to my</em> website<span class="period">.</span></h1>
+          <p class="welcome-description">Tempat menyimpan karakter, cerita, dan potongan dunia yang ingin dikenang.</p>
+          <button class="enter-button" id="enterButton"><span>Kunjungi Sekarang</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+        </div>
+        <div class="welcome-foot"><span>SCROLL LESS. FEEL MORE.</span><span>EST. MMXXVI</span></div>
+      </div>
+      <div class="welcome-side welcome-art">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-glow"></div>
+        <div class="art-number">01 <span>/</span> 03</div><div class="art-vertical">CHARACTER ARCHIVE — PERSONAL COLLECTION</div>
+        <div class="art-center"><div class="art-ring"><div class="art-ring-inner"></div></div><div class="art-monogram">N<span>.</span></div><div class="art-caption">STORIES LIVE HERE</div></div>
+        <div class="art-bottom"><span>AN OPEN CANVAS</span><span class="art-line"></span><span>MEDAN, ID</span></div>
+      </div>
+    </section>
+
+    <section class="gallery-screen view-hidden" id="gallery" aria-label="Character gallery">
+      <div class="gallery-atmosphere" id="galleryAtmosphere" aria-hidden="true"></div>
+      <header class="site-header">
+        <a class="brand" href="#/home" aria-label="Nocturne home"><span class="brand-mark">N<span>.</span></span><span class="brand-name">NOCTURNE<small>CHARACTER ARCHIVE</small></span></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="#/characters">Characters <span id="navCount">03</span></a>
+          <a class="nav-link" href="#/about">About</a>
+          <a class="nav-link" href="#/contact">Contact</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span></button>
+      </header>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <a href="#/characters">Characters <span id="mobileCount">03</span></a><a href="#/about">About</a><a href="#/contact">Contact</a>
+      </nav>
+      <section class="gallery-intro" id="characters">
+        <div class="intro-label"><span class="eyebrow-dot"></span> THE COLLECTION / <span id="collectionCount">001—003</span></div>
+        <div class="intro-row"><h2>Characters<br><em>with a story.</em></h2><p>A small collection of characters, each with their own world, details, and stories to discover.</p></div>
+        <div class="intro-rule"><span>SELECT A CHARACTER</span><span class="rule-line"></span><span id="entryCount">03 ENTRIES</span></div>
+      </section>
+      <section class="character-helix-section" id="characterHelixSection" aria-label="Daftar karakter 3D">
+        <div class="helix-sticky-viewport" id="helixViewport">
+          <div class="helix-ambient-particles" aria-hidden="true"></div>
+          <div class="helix-spine" id="helixSpine" aria-hidden="true">
+            <svg viewBox="0 0 180 960" class="helix-spine-svg" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="idolBeamCore" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#b67f98" stop-opacity="0"/>
+                  <stop offset="25%" stop-color="#e5c2d1" stop-opacity="0.75"/>
+                  <stop offset="50%" stop-color="#8498c2" stop-opacity="0.95"/>
+                  <stop offset="75%" stop-color="#b67f98" stop-opacity="0.75"/>
+                  <stop offset="100%" stop-color="#8498c2" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="idolRingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#b67f98" stop-opacity="0.8"/>
+                  <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9"/>
+                  <stop offset="100%" stop-color="#8498c2" stop-opacity="0.8"/>
+                </linearGradient>
+                <filter id="cyberGlow" x="-40%" y="-20%" width="180%" height="140%">
+                  <feGaussianBlur stdDeviation="5" result="blur"/>
+                  <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                </filter>
+              </defs>
+              <!-- Poros Cahaya Holografik & Jalur Frekuensi -->
+              <line x1="90" y1="0" x2="90" y2="960" stroke="url(#idolBeamCore)" stroke-width="2.5"/>
+              <line x1="82" y1="0" x2="82" y2="960" stroke="#ffffff18" stroke-width="1" stroke-dasharray="3 9"/>
+              <line x1="98" y1="0" x2="98" y2="960" stroke="#ffffff18" stroke-width="1" stroke-dasharray="3 9"/>
+
+              <!-- Node Resonansi Idol & Teknologi -->
+              <g filter="url(#cyberGlow)" fill="none" stroke="url(#idolRingGrad)">
+                <circle cx="90" cy="110" r="18" stroke-width="1.2" stroke-dasharray="14 6"/>
+                <circle cx="90" cy="110" r="6" fill="#e5c2d1" fill-opacity="0.4" stroke-width="1"/>
+                <polygon points="90,225 106,245 90,265 74,245" stroke-width="1.3" fill="#191620" fill-opacity="0.6"/>
+                <circle cx="90" cy="245" r="24" stroke-width="0.8" stroke-opacity="0.45"/>
+                <circle cx="90" cy="380" r="22" stroke-width="1.4" stroke-dasharray="22 8"/>
+                <path d="M62,380 L76,380 M104,380 L118,380" stroke-width="1.5"/>
+                <circle cx="90" cy="380" r="7" fill="#8498c2" fill-opacity="0.5"/>
+                <polygon points="90,485 114,515 90,545 66,515" stroke-width="1.5" fill="#191620" fill-opacity="0.7"/>
+                <circle cx="90" cy="515" r="32" stroke-width="1" stroke-dasharray="6 6"/>
+                <circle cx="90" cy="515" r="9" fill="#ffffff" fill-opacity="0.65"/>
+                <circle cx="90" cy="655" r="20" stroke-width="1.3" stroke-dasharray="18 7"/>
+                <circle cx="90" cy="655" r="6" fill="#b67f98" fill-opacity="0.5"/>
+                <polygon points="90,775 104,793 90,811 76,793" stroke-width="1.2"/>
+                <circle cx="90" cy="793" r="24" stroke-width="0.8" stroke-opacity="0.4"/>
+              </g>
+            </svg>
+          </div>
+          <div class="helix-stage" id="characterGrid"></div>
+          <div class="helix-hud" aria-hidden="true">
+            <div class="helix-hud-left">
+              <span class="helix-hud-kicker">3D ARCHIVE ORBIT</span>
+              <span class="helix-hud-sub">SCROLL TO ROTATE · HOVER TO SHIFT ATMOSPHERE</span>
+            </div>
+            <div class="helix-hud-controls">
+              <button type="button" class="helix-nav-btn" id="helixPrevBtn" aria-label="Karakter sebelumnya">« PREV</button>
+              <span class="helix-active-indicator" id="helixActiveIndicator">001 / AKARI</span>
+              <button type="button" class="helix-nav-btn" id="helixNextBtn" aria-label="Karakter berikutnya">NEXT »</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-strip" id="about">
+        <div class="about-index">A—01</div><div><p class="section-label">ABOUT THIS SPACE</p><h3>A place for the<br><em>characters we keep.</em></h3></div>
+        <p class="about-copy">Arsip kecil untuk karakter dan cerita favorit. Terinspirasi oleh hololive production dan hololive ERROR sebagai referensi penyajian karakter dan atmosfer visual. Situs ini tidak berafiliasi dengan COVER Corp.</p>
+      </section>
+      <footer class="site-footer" id="contact">
+        <a class="footer-brand" href="#/home">NOCTURNE<span>.</span></a><span class="footer-copy">© <span id="year"></span> NOCTURNE. ALL RIGHTS RESERVED.</span><a class="back-top" href="#/characters">BACK TO TOP ↑</a>
+      </footer>
+    </section>
+
+    <section class="docs-screen view-hidden" id="docs" aria-label="Dokumentasi karakter">
+      <header class="site-header docs-header">
+        <a class="brand" href="#/characters" aria-label="Kembali ke galeri"><span class="brand-mark">N<span>.</span></span><span class="brand-name">NOCTURNE<small>CHARACTER ARCHIVE</small></span></a>
+        <div class="docs-breadcrumb"><a href="#/characters">CHARACTERS</a><span>/</span><span id="crumbName">CHARACTER</span></div>
+        <button class="back-gallery" id="backGallery"><span>←</span><span>Gallery</span></button>
+      </header>
+      <section class="docs-hero" id="docsHero">
+        <div class="docs-hero-image" id="docsHeroImage"><span class="hero-monogram" id="heroMonogram">A</span><img id="heroImage" alt=""></div>
+        <div class="docs-hero-shade"></div>
+        <div class="docs-hero-content">
+          <div class="intro-label"><span class="eyebrow-dot"></span> CHARACTER DOCUMENTATION / <span id="docsIndex">001</span></div>
+          <p class="docs-subtitle" id="docsSubtitle">THE STARGAZER</p>
+          <h1 id="docsName">Akari Hoshino</h1>
+          <p class="docs-hero-description" id="docsSummary">A short introduction to this character.</p>
+          <div class="docs-hero-meta"><span id="docsTag">DREAMER</span><span class="meta-line"></span><span>ARCHIVE ENTRY <b id="docsEntry">001</b></span></div>
+        </div>
+        <button class="hero-back" id="heroBack" aria-label="Kembali ke galeri">↙ <span>BACK TO CHARACTERS</span></button>
+      </section>
+      <div class="docs-main">
+        <div class="docs-tabs-wrap">
+          <div class="docs-tabs" role="tablist" aria-label="Kategori dokumentasi">
+            <button class="docs-tab active" role="tab" id="tabAbout" aria-selected="true" aria-controls="tabPanel" data-tab="about"><span>01</span> About</button>
+            <button class="docs-tab" role="tab" id="tabPhotos" aria-selected="false" aria-controls="tabPanel" data-tab="photos"><span>02</span> Foto <b id="photoCount">00</b></button>
+            <button class="docs-tab" role="tab" id="tabVideos" aria-selected="false" aria-controls="tabPanel" data-tab="videos"><span>03</span> Video <b id="videoCount">00</b></button>
+          </div>
+          <div class="tabs-caption">EXPLORE THIS CHARACTER <span>↘</span></div>
+        </div>
+        <div class="tab-panel" id="tabPanel" role="tabpanel" aria-labelledby="tabAbout"></div>
+      </div>
+      <footer class="site-footer docs-footer">
+        <a class="footer-brand" href="#/characters">NOCTURNE<span>.</span></a><span class="footer-copy">© <span id="docsYear"></span> NOCTURNE. ALL RIGHTS RESERVED.</span><a class="back-top" href="#/docs">BACK TO TOP ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <aside class="music-widget" id="musicWidget" aria-label="Pemutar musik">
+    <button class="music-fab" id="musicFab" aria-label="Buka pemutar musik" aria-expanded="false"><span class="music-fab-glyph">♫</span><i class="music-fab-pulse"></i></button>
+    <section class="music-panel" id="musicPanel" aria-label="Music player" aria-hidden="true">
+      <div class="music-panel-head"><div class="music-panel-brand"><span class="music-mini-mark">N.</span><div><strong>NOCTURNE RADIO</strong><small>YOUR PERSONAL SOUNDTRACK</small></div></div><div class="music-head-actions"><button id="musicMaximize" class="music-close music-maximize" aria-label="Perbesar pemutar" title="Perbesar">⤢</button><button id="musicClose" class="music-close" aria-label="Tutup pemutar">×</button></div></div>
+      <div class="music-now-art" id="musicNowArt"><span>♫</span><div class="music-art-orbit"></div></div>
+      <div class="music-track-meta"><span class="music-live-label"><i></i> NOW PLAYING</span><h3 id="musicTrackTitle">Belum ada lagu</h3><p id="musicTrackArtist">Tambahkan audio lokal melalui editor</p></div>
+      <p class="music-source-note" id="musicSourceNote">LOCAL AUDIO · KONTROL PENUH</p><div class="music-provider" id="musicProvider" hidden></div><div class="music-progress-wrap" id="musicProgress"><span id="musicCurrentTime">0:00</span><input id="musicSeek" type="range" min="0" max="100" value="0" aria-label="Posisi lagu"><span id="musicDuration">0:00</span></div>
+      <div class="music-controls"><button id="musicShuffle" aria-label="Acak lagu" title="Acak">⤨</button><button id="musicPrev" aria-label="Lagu sebelumnya">|◀</button><button id="musicPlay" class="music-play" aria-label="Putar">▶</button><button id="musicNext" aria-label="Lagu berikutnya">▶|</button><button id="musicRepeat" aria-label="Ulangi lagu" title="Ulangi">↻</button></div>
+      <div class="music-volume-row"><span>♫</span><input id="musicVolume" type="range" min="0" max="1" step="0.01" value="0.72" aria-label="Volume"><button id="musicMute" aria-label="Bisukan">VOL</button></div>
+      <div class="music-library-tools"><label class="music-search"><span>⌕</span><input id="musicSearch" type="search" placeholder="Cari judul atau artis…" autocomplete="off" aria-label="Cari lagu"></label><span id="musicSearchCount" class="music-search-count">0 lagu</span></div><div class="music-library-layout"><nav class="music-alpha-index" id="musicAlphaIndex" aria-label="Indeks lagu"></nav><div class="music-library-results"><div class="music-playlist-head"><span>LOCAL LIBRARY</span><span id="musicPlaylistCount">00 TRACKS</span></div><div class="music-playlist" id="musicPlaylist"><p class="music-empty">Playlist masih kosong.</p></div></div></div>
+      <label class="music-autoplay"><input type="checkbox" id="musicAutoPlayPublic"><span class="music-check"></span><span><strong>Play start web open</strong><small>Coba putar otomatis saat website dibuka</small></span></label>
+      <p class="music-browser-note">Catatan: browser dapat memblokir autoplay saat halaman dibuka. Jika diblokir, tekan tombol play sekali.</p>
+    </section>
+    <audio id="musicAudio" preload="metadata"></audio>
+  </aside>
+  <div class="detail-overlay" id="detailOverlay" aria-hidden="true">
+    <button class="overlay-backdrop" id="overlayBackdrop" aria-label="Tutup detail karakter"></button>
+    <article class="detail-panel" id="detailPanel" role="dialog" aria-modal="true" aria-labelledby="detailName">
+      <button class="detail-close" id="detailClose" aria-label="Tutup detail">×</button>
+      <div class="detail-main-grid">
+        <div class="detail-image-wrap" id="detailImageWrap"><img id="detailImage" alt=""><div class="detail-image-shade"></div><span class="detail-counter" id="detailCounter">CHARACTER / 001</span><span class="detail-image-word">PORTRAIT</span></div>
+        <aside class="detail-side-info"><div class="detail-side-kicker"><span>NOCTURNE / CHARACTER FILE</span><span id="detailIndex">001</span></div><p class="detail-tag" id="detailTag">THE COLLECTION</p><h2 id="detailName">Character name</h2><p class="detail-side-subtitle" id="detailSubtitle">CHARACTER PROFILE</p><div class="detail-facts" id="detailFacts"></div><div class="detail-side-note"><span>ARCHIVE STATUS</span><strong>REGISTERED CHARACTER</strong></div></aside>
+      </div>
+      <section class="detail-lower"><div class="detail-description-block"><div class="detail-section-kicker">01 / CHARACTER OVERVIEW</div><div class="detail-description" id="detailDescription"><p>Deskripsi karakter.</p></div></div><button class="detail-more" id="detailMore" type="button"><span class="detail-more-kicker">CHARACTER ARCHIVE / <span id="detailMoreNumber">001</span></span><span class="detail-more-title">MORE / DETAIL</span><span class="detail-more-arrow" aria-hidden="true">↗</span></button><div class="detail-bottom"><span>SCROLL TO EXPLORE · SCROLL PAST END TO CLOSE</span><span class="detail-bottom-line"></span><span id="detailBottomNumber">001 / 003</span></div></section>
+    </article>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-backdrop" id="lightboxBackdrop" aria-label="Tutup foto"></button>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup foto">×</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Foto sebelumnya">‹</button>
+    <figure class="lightbox-figure" id="lightboxFigure"><img id="lightboxImage" alt=""><figcaption><span id="lightboxCaption">CHARACTER PHOTO</span><span id="lightboxCounter">01 / 04</span></figcaption></figure>
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Foto berikutnya">›</button>
+  </div>
+  <div class="video-lightbox" id="videoLightbox" aria-hidden="true">
+    <button class="video-lightbox-backdrop" id="videoLightboxBackdrop" aria-label="Tutup video"></button>
+    <button class="video-lightbox-close" id="videoLightboxClose" aria-label="Tutup video">×</button>
+    <button class="video-lightbox-arrow" id="videoLightboxPrev" aria-label="Video sebelumnya">‹</button>
+    <div class="video-lightbox-content"><div class="video-lightbox-player" id="videoLightboxPlayer"></div><div class="video-lightbox-caption"><span id="videoLightboxTitle">VIDEO ARCHIVE</span><span id="videoLightboxCount">01 / 01</span></div></div>
+    <button class="video-lightbox-arrow" id="videoLightboxNext" aria-label="Video berikutnya">›</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

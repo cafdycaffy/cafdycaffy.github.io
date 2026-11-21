@@ -1,0 +1,132 @@
+{
+  "id": "akari",
+  "number": "001",
+  "name": "Akari Hoshino",
+  "subtitle": "The stargazer",
+  "tag": "DREAMER",
+  "initial": "A",
+  "accent": "#b67f98",
+  "description": "Seorang pemimpi yang selalu mencari arti di balik langit malam.",
+  "about": {
+    "lead": "Ada orang yang melihat langit malam sebagai kegelapan. Akari melihatnya sebagai ribuan kemungkinan.",
+    "paragraphs": [
+      "Akari Hoshino adalah karakter contoh untuk menunjukkan bagaimana dokumentasi karakter akan ditampilkan. Ganti bagian ini dengan cerita, latar belakang, kepribadian, atau informasi yang ingin dicatat.",
+      "Halaman About dibuat seperti dokumentasi: teks dapat dibagi ke beberapa paragraf, ditambah detail singkat, catatan karakter, dan informasi lain sesuai kebutuhan pemilik website."
+    ],
+    "facts": [
+      [
+        "Nama",
+        "Akari Hoshino"
+      ],
+      [
+        "Julukan",
+        "The Stargazer"
+      ],
+      [
+        "Kepribadian",
+        "Penasaran, lembut, optimistis"
+      ],
+      [
+        "Kesukaan",
+        "Langit malam dan buku"
+      ],
+      [
+        "Peran",
+        "Penjelajah cerita"
+      ],
+      [
+        "Status",
+        "Contoh / dapat diubah"
+      ]
+    ],
+    "notes": "Gunakan bagian catatan ini untuk menulis trivia, hubungan dengan karakter lain, kutipan, atau detail yang tidak masuk ke biodata utama."
+  },
+  "photos": [
+    {
+      "title": "Portrait study 01",
+      "src": "./karakter/akari/image/portrait.svg",
+      "tone": "#b67f98",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "Quiet afternoon",
+      "src": "./karakter/akari/image/school-clothes.svg",
+      "tone": "#b67f98",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "A little daydream",
+      "src": "./karakter/akari/image/memory.svg",
+      "tone": "#b67f98",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "The stargazer",
+      "src": "./karakter/akari/image/thumbnail.svg",
+      "tone": "#b67f98",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "Memory fragment",
+      "src": "./karakter/akari/image/portrait.svg",
+      "tone": "#b67f98",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "Blue hour",
+      "src": "./karakter/akari/image/school-clothes.svg",
+      "tone": "#b67f98",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "After the rain",
+      "src": "./karakter/akari/image/memory.svg",
+      "tone": "#b67f98",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    }
+  ],
+  "videos": [
+    {
+      "title": "Character introduction",
+      "description": "Contoh video pengenalan karakter. Ganti dengan tautan video milikmu.",
+      "url": "",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "customTone": false,
+      "tone": "#b67f98"
+    }
+  ],
+  "createdAt": "2026-10-23T00:00:00.000Z",
+  "updatedAt": "2026-10-23T00:00:00.000Z",
+  "history": [
+    {
+      "date": "2026-10-23T00:00:00.000Z",
+      "action": "created",
+      "summary": "Karakter contoh awal"
+    }
+  ],
+  "folder": "akari",
+  "thumbnail": "./karakter/akari/image/thumbnail.svg",
+  "informasi": "informasi.md"
+}

@@ -1,0 +1,105 @@
+{
+  "id": "mika",
+  "number": "003",
+  "name": "Mika Amane",
+  "subtitle": "The daydreamer",
+  "tag": "WANDERER",
+  "initial": "M",
+  "accent": "#c4a17b",
+  "description": "Sosok ceria yang menemukan keajaiban dalam hal-hal sederhana.",
+  "about": {
+    "lead": "Dunia tidak selalu perlu berubah menjadi luar biasa. Kadang kita hanya perlu melihatnya dari sudut yang berbeda.",
+    "paragraphs": [
+      "Mika Amane adalah karakter contoh ketiga, dengan data profil, galeri, dan video yang terpisah.",
+      "Semua konten ini adalah contoh. Pemilik website dapat mengganti nama, deskripsi, data, gambar, serta video melalui array characters di file script.js."
+    ],
+    "facts": [
+      [
+        "Nama",
+        "Mika Amane"
+      ],
+      [
+        "Julukan",
+        "The Daydreamer"
+      ],
+      [
+        "Kepribadian",
+        "Ceria, spontan, ingin tahu"
+      ],
+      [
+        "Kesukaan",
+        "Bunga dan perjalanan"
+      ],
+      [
+        "Peran",
+        "Pengembara"
+      ],
+      [
+        "Status",
+        "Contoh / dapat diubah"
+      ]
+    ],
+    "notes": "Catatan tambahan Mika. Area ini bisa dipakai untuk menulis trivia atau informasi karakter lainnya."
+  },
+  "photos": [
+    {
+      "title": "Golden afternoon",
+      "src": "./karakter/mika/image/portrait.svg",
+      "tone": "#c4a17b",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "Little sunshine",
+      "src": "./karakter/mika/image/school-clothes.svg",
+      "tone": "#c4a17b",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "A warm memory",
+      "src": "./karakter/mika/image/memory.svg",
+      "tone": "#c4a17b",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "Daydream",
+      "src": "./karakter/mika/image/thumbnail.svg",
+      "tone": "#c4a17b",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    }
+  ],
+  "videos": [
+    {
+      "title": "A small introduction",
+      "description": "Contoh video. Tambahkan URL YouTube atau path file MP4.",
+      "url": "",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "customTone": false,
+      "tone": "#c4a17b"
+    }
+  ],
+  "createdAt": "2026-10-23T00:00:00.000Z",
+  "updatedAt": "2026-10-23T00:00:00.000Z",
+  "history": [
+    {
+      "date": "2026-10-23T00:00:00.000Z",
+      "action": "created",
+      "summary": "Karakter contoh awal"
+    }
+  ],
+  "folder": "mika",
+  "thumbnail": "./karakter/mika/image/thumbnail.svg",
+  "informasi": "informasi.md"
+}

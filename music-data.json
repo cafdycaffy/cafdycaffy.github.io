@@ -1,0 +1,11 @@
+{
+  "tracks": [
+    {
+      "title": "Nocturne \u2014 Sample Atmosphere",
+      "artist": "NOCTURNE Demo",
+      "src": "./music/demo-ambient.wav",
+      "type": "audio"
+    }
+  ],
+  "autoPlay": false
+}

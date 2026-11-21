@@ -1,0 +1,104 @@
+{
+  "id": "rei",
+  "number": "002",
+  "name": "Rei Kisaragi",
+  "subtitle": "The quiet moon",
+  "tag": "MYSTERY",
+  "initial": "R",
+  "accent": "#8498c2",
+  "description": "Tenang dan sulit ditebak, tetapi selalu memperhatikan hal-hal kecil.",
+  "about": {
+    "lead": "Tidak semua hal yang tenang berarti kosong. Kadang, justru di sanalah cerita paling ramai disimpan.",
+    "paragraphs": [
+      "Rei Kisaragi adalah karakter contoh kedua. Isi dokumentasinya sengaja dibuat terpisah dari Akari, sehingga setiap karakter memiliki halaman About sendiri.",
+      "Tulis profil karakter, latar cerita, hubungan, kemampuan, atau informasi lain di sini. Konten tab Foto dan Video juga bisa berbeda untuk setiap karakter."
+    ],
+    "facts": [
+      [
+        "Nama",
+        "Rei Kisaragi"
+      ],
+      [
+        "Julukan",
+        "The Quiet Moon"
+      ],
+      [
+        "Kepribadian",
+        "Tenang, teliti, tertutup"
+      ],
+      [
+        "Kesukaan",
+        "Hujan dan musik"
+      ],
+      [
+        "Peran",
+        "Pengamat"
+      ],
+      [
+        "Status",
+        "Contoh / dapat diubah"
+      ]
+    ],
+    "notes": "Catatan tambahan Rei. Ganti teks ini dengan fakta, trivia, atau dokumentasi yang relevan."
+  },
+  "photos": [
+    {
+      "title": "Still water",
+      "src": "./karakter/rei/image/portrait.svg",
+      "tone": "#8498c2",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "Moonlit room",
+      "src": "./karakter/rei/image/school-clothes.svg",
+      "tone": "#8498c2",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "Blue silence",
+      "src": "./karakter/rei/image/memory.svg",
+      "tone": "#8498c2",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "Between moments",
+      "src": "./karakter/rei/image/thumbnail.svg",
+      "tone": "#8498c2",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    },
+    {
+      "title": "Winter memory",
+      "src": "./karakter/rei/image/portrait.svg",
+      "tone": "#8498c2",
+      "createdAt": "2026-10-23T00:00:00.000Z",
+      "updatedAt": "2026-10-23T00:00:00.000Z",
+      "description": "Ilustrasi placeholder untuk demonstrasi. Ganti dengan gambar karakter.",
+      "customTone": false
+    }
+  ],
+  "videos": [],
+  "createdAt": "2026-10-23T00:00:00.000Z",
+  "updatedAt": "2026-10-23T00:00:00.000Z",
+  "history": [
+    {
+      "date": "2026-10-23T00:00:00.000Z",
+      "action": "created",
+      "summary": "Karakter contoh awal"
+    }
+  ],
+  "folder": "rei",
+  "thumbnail": "./karakter/rei/image/thumbnail.svg",
+  "informasi": "informasi.md"
+}
