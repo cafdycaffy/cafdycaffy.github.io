@@ -44,7 +44,7 @@
   "photos": [
     {
       "title": "Portrait study 01",
-      "src": "./karakter/akari/image/portrait.svg",
+      "src": "./karakter/akari/image/akame.jpg",
       "tone": "#b67f98",
       "createdAt": "2026-10-23T00:00:00.000Z",
       "updatedAt": "2026-10-23T00:00:00.000Z",
@@ -53,7 +53,7 @@
     },
     {
       "title": "Quiet afternoon",
-      "src": "./karakter/akari/image/school-clothes.svg",
+      "src": "./karakter/akari/image/akame-desain.jpg",
       "tone": "#b67f98",
       "createdAt": "2026-10-23T00:00:00.000Z",
       "updatedAt": "2026-10-23T00:00:00.000Z",
@@ -62,7 +62,7 @@
     },
     {
       "title": "A little daydream",
-      "src": "./karakter/akari/image/memory.svg",
+      "src": "./karakter/akari/image/aakame.jpg",
       "tone": "#b67f98",
       "createdAt": "2026-10-23T00:00:00.000Z",
       "updatedAt": "2026-10-23T00:00:00.000Z",
@@ -71,7 +71,7 @@
     },
     {
       "title": "The stargazer",
-      "src": "./karakter/akari/image/thumbnail.svg",
+      "src": "./karakter/akari/image/akame-and-moon.jpg",
       "tone": "#b67f98",
       "createdAt": "2026-10-23T00:00:00.000Z",
       "updatedAt": "2026-10-23T00:00:00.000Z",
@@ -80,7 +80,7 @@
     },
     {
       "title": "Memory fragment",
-      "src": "./karakter/akari/image/portrait.svg",
+      "src": "./karakter/akari/image/akame-ga-kill.jpg",
       "tone": "#b67f98",
       "createdAt": "2026-10-23T00:00:00.000Z",
       "updatedAt": "2026-10-23T00:00:00.000Z",
