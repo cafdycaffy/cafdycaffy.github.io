@@ -33,10 +33,30 @@ async function loadCharacterData() {
     }));
     characters.splice(0, characters.length, ...loaded.filter(Boolean));
     renderCards();
+    startCardPortraitCycle();
     if (window.renderRoute) window.renderRoute(false);
   } catch (error) { console.error('Gagal memuat karakter:', error); }
 }
 
+let portraitCycleTimer = null;
+function startCardPortraitCycle() {
+  if (portraitCycleTimer) clearInterval(portraitCycleTimer);
+  portraitCycleTimer = setInterval(() => {
+    document.querySelectorAll(".card-photo-cycle").forEach(img => {
+      const c = getCharacter(img.dataset.characterId);
+      const photos = (c?.photos || []).filter(p => p.src);
+      if (photos.length < 2) return;
+      let next = photos.findIndex(p => p.src === img.getAttribute("src"));
+      next = (next + 1) % photos.length;
+      img.style.opacity = "0";
+      setTimeout(() => { img.src = photos[next].src; img.style.opacity = "1"; }, 250);
+    });
+  }, 4800);
+}
+function pickCharacterImage(c) {
+  const photos = (c?.photos || []).filter(p => p.src);
+  return photos.length ? photos[Math.floor(Math.random() * photos.length)].src : (c?.thumbnail || "");
+}
 function getCharacter(id) { return characters.find(c => c.id === id); }
 function currentRoute() {
   const raw = location.hash.replace(/^#\/?/, "");
@@ -95,13 +115,13 @@ function clearCardAtmosphere() {
 
 function renderCards() {
   grid.innerHTML = characters.map((c, i) => {
-    const img = c.thumbnail || c.photos.find(p => p.src)?.src || "";
+    const img = c.photos?.find(p => p.src)?.src || c.thumbnail || "";
     const topFacts = (c.about?.facts || []).slice(0, 2);
     const pillsHtml = topFacts.map(([k, v]) => `<span class="card-fact-pill"><b>${escapeHtml(k)}:</b> ${escapeHtml(v)}</span>`).join("");
     return `<button class="character-card" type="button" data-character="${escapeHtml(c.id)}" style="--card-accent:${escapeHtml(c.accent)};animation-delay:${i * 90}ms" aria-label="Buka dokumentasi ${escapeHtml(c.name)}">
       <div class="card-art">
         <div class="card-holo-grid" aria-hidden="true"></div>
-        <div class="card-portrait">${img ? `<img src="${escapeHtml(img)}" alt="${escapeHtml(c.name)}" loading="lazy">` : `<span class="card-initial-glyph">${escapeHtml(c.initial)}</span>`}</div>
+        <div class="card-portrait">${img ? `<img class="card-photo-cycle" src="${escapeHtml(img)}" data-character-id="${escapeHtml(c.id)}" alt="${escapeHtml(c.name)}" loading="lazy">` : `<span class="card-initial-glyph">${escapeHtml(c.initial)}</span>`}</div>
       </div>
       <div class="card-topline">
         <span class="card-entry-badge">ENTRY / ${escapeHtml(c.number)}</span>
@@ -145,7 +165,7 @@ function renderCards() {
 }
 function openDetail(id, trigger) {
   const c=getCharacter(id); if(!c)return; currentCharacter=c; lastFocus=trigger||document.activeElement;
-  const portrait=c.thumbnail||c.photos.find(p=>p.src)?.src||"";
+  const portrait=pickCharacterImage(c);
   $("detailImage").src=portrait; $("detailImage").style.display=portrait?"block":"none"; $("detailImage").alt=c.name;
   $("detailImageWrap").style.background=`radial-gradient(ellipse at 50% 30%, ${c.accent}88, transparent 60%),linear-gradient(145deg,#30252f,#17151b)`;
   $("detailImageWrap").style.setProperty("--detail-accent",c.accent); $("detailPanel").style.setProperty("--detail-accent",c.accent);
@@ -171,7 +191,7 @@ function renderDocs(c, tab = "about") {
   $("heroMonogram").textContent = c.initial;
   $("docsHero").style.background = `radial-gradient(ellipse at 72% 28%, ${c.accent}8a, transparent 42%),linear-gradient(120deg,#111014,#201a24)`;
   const heroImage = $("heroImage");
-  const portrait = c.thumbnail || c.photos.find(p => p.src)?.src || "";
+  const portrait = pickCharacterImage(c);
   if (portrait) { heroImage.src = portrait; heroImage.style.display = "block"; $("heroMonogram").style.display = "none"; }
   else { heroImage.removeAttribute("src"); heroImage.style.display = "none"; $("heroMonogram").style.display = "grid"; }
   $("docsHeroImage").style.background = `radial-gradient(ellipse at 50% 30%, ${c.accent}55, transparent 65%)`;
